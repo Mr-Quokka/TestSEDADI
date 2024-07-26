@@ -12,7 +12,7 @@ Pour installer le projet, il suffit de cloner le dépôt git :
 git clone https://github.com/Mr-Quokka/TestSEDADI
 ```
 
-Ensuite, pour lancer le projet, il est nécessaire d'avoir installé [Node.js]('https://nodejs.org/en').
+Ensuite, pour lancer le projet, il est nécessaire d'avoir installé [Node.js](https://nodejs.org/en).
 
 Une fois Node.js installé, il faut installer la version 17 de Angular CLI à l'aide de la commande suivante :
 
@@ -28,7 +28,7 @@ npm install
 ng serve
 ```
 
-En cas de doute, vous pouvez consulter la documentation officielle d'Angular : [Build your first Angular app]('https://v17.angular.io/tutorial/first-app')
+En cas de doute, vous pouvez consulter la documentation officielle d'Angular : [Build your first Angular app](https://v17.angular.io/tutorial/first-app)
 
 ## Problèmes rencontrés
 
