@@ -1,0 +1,12 @@
+<div>
+    <h2>Téléphones</h2>
+    <mat-list>
+        <mat-list-item *ngFor="let phone of phones">
+            <span>Numéro IMEI : {{ phone.imei }} </span>
+            <span>Marque : {{ phone.brand }} </span>
+            <span>Nom : {{ phone.name }} </span>
+            <span>Couleur : {{ phone.color }} </span>
+            <span>Capacité : {{ phone.capacity }} Go </span>
+        </mat-list-item>
+    </mat-list>
+</div>
