@@ -20,7 +20,7 @@ import { Router } from '@angular/router';
   styleUrl: './phone-form.component.css'
 })
 export class PhoneFormComponent {
-  phone: Phone = { imei: 0, brand: '', name: '', color: '', capacity: 0 };
+  phone: Phone = { imei: 0, brand: '', name: '', color: '', capacity: 2 };
 
   constructor(private phoneService: PhoneService, private router: Router) {
   }

@@ -1,27 +1,38 @@
 # TestSEDADI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Projet de gestion de téléphones mobiles.
 
-## Development server
+Projet développé en Angular 17
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+Pour installer le projet, il suffit de cloner le dépôt git :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+git clone https://github.com/Mr-Quokka/TestSEDADI
+```
 
-## Build
+Ensuite, pour lancer le projet, il est nécessaire d'avoir installé [Node.js]('https://nodejs.org/en').
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Une fois Node.js installé, il faut installer la version 17 de Angular CLI à l'aide de la commande suivante :
 
-## Running unit tests
+```bash
+npm install -g @angular/cli@17
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Une fois cette étape faite, il suffit de lancer les commandes suivantes à la racine du projet :
 
-## Running end-to-end tests
+```bash
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng serve
+```
 
-## Further help
+En cas de doute, vous pouvez consulter la documentation officielle d'Angular : [Build your first Angular app]('https://v17.angular.io/tutorial/first-app')
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Problèmes rencontrés
+
+Je n'ai pas réussi à faire fonctionner les validations du formulaire d'ajout.
+
+Le numéro IMEI, la marque et la capacité de stockage ne sont donc pas obligatoires.\
+De plus, la longueur de l'IMEI n'est pas vérifiée et la capacité de stockage n'est forcément un multiple de 2.
