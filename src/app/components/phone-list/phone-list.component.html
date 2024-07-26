@@ -8,6 +8,7 @@
             <span>Nom : {{ phone.name }} </span>
             <span>Couleur : {{ phone.color }} </span>
             <span>Capacité : {{ phone.capacity }} Go </span>
+            <button mat-button (click)="deletePhone(phone.imei)"><mat-icon>delete</mat-icon></button>
         </mat-list-item>
     </mat-list>
 

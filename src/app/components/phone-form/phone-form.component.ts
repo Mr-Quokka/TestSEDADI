@@ -34,6 +34,7 @@ export class PhoneFormComponent {
   });
 
   addPhone() {
+    
     this.phoneService.addPhone(this.phoneForm.value);
 
     this.router.navigate(['/']);

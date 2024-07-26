@@ -28,4 +28,10 @@ export class PhoneService {
 
     localStorage.setItem('phones', JSON.stringify(this.phones));
   }
+
+  deletePhone(imei: number): void {
+    this.phones = this.phones.filter(phone => phone.imei !== imei);
+
+    localStorage.setItem('phones', JSON.stringify(this.phones));
+  }
 }
