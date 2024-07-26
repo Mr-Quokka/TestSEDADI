@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Phone } from '../../models/phone.model';
 import { PhoneService } from '../../services/phone.service';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { MatListModule } from '@angular/material/list'; 
 
 @Component({
@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
   standalone: true,
   imports: [
     NgFor,
+    NgIf,
     MatListModule
   ],
   templateUrl: './phone-list.component.html',

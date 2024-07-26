@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatFormField } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button'; 
-import { FormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Phone } from '../../models/phone.model';
 import { PhoneService } from '../../services/phone.service';
 import { Router } from '@angular/router';
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   imports: [
     MatFormField,
     MatInputModule,
-    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule
   ],
   templateUrl: './phone-form.component.html',

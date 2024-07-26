@@ -1,5 +1,6 @@
 <div>
     <h2>Téléphones</h2>
+    
     <mat-list>
         <mat-list-item *ngFor="let phone of phones">
             <span>Numéro IMEI : {{ phone.imei }} </span>
@@ -9,4 +10,8 @@
             <span>Capacité : {{ phone.capacity }} Go </span>
         </mat-list-item>
     </mat-list>
+
+    <div *ngIf="phones.length === 0">
+        <p>Aucun téléphone pour le moment</p>
+    </div>
 </div>

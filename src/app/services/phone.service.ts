@@ -10,7 +10,13 @@ export class PhoneService {
   private phones: Phone[] = [];
 
   constructor() {
-    this.phones = PHONE;
+    const storedphones = localStorage.getItem('phones');
+    
+    if (storedphones) {
+      this.phones = JSON.parse(storedphones);
+    } else {
+      this.phones = [];
+    }
   }
 
   getAll(): Phone[]{
@@ -19,5 +25,7 @@ export class PhoneService {
 
   addPhone(phone: Phone): void {
     this.phones.push(phone);
+
+    localStorage.setItem('phones', JSON.stringify(this.phones));
   }
 }

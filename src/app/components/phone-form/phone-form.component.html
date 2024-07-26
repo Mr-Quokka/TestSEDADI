@@ -1,24 +1,24 @@
-<div class="flex-col w-25" >
+<div [formGroup]="phoneForm" class="flex-col w-25" >
     <h2>Ajouter un téléphone</h2>
     <mat-form-field appearance="outline">
         <mat-label>Numéro IMEI</mat-label>
-        <input matInput placeholder="Numéro IMEI" [(ngModel)]="phone.imei" name="imei">
+        <input matInput placeholder="Numéro IMEI" formControlName="imei" name="imei">
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>Marque</mat-label>
-        <input matInput placeholder="Marque" [(ngModel)]="phone.brand" name="brand">
+        <input matInput placeholder="Marque" formControlName="brand" name="brand">
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>Nom</mat-label>
-        <input matInput placeholder="Nom" [(ngModel)]="phone.name" name="name">
+        <input matInput placeholder="Nom" formControlName="name" name="name">
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>Couleur</mat-label>
-        <input matInput placeholder="Couleur" [(ngModel)]="phone.color" name="color">
+        <input matInput placeholder="Couleur" formControlName="color" name="color">
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>Capacité</mat-label>
-        <input matInput placeholder="Capacité" [(ngModel)]="phone.capacity" name="capacity">
+        <input matInput placeholder="Capacité" formControlName="capacity" name="capacity">
     </mat-form-field>
     <button mat-flat-button color="primary" type="button" (click)="addPhone()">Ajouter</button>
 </div>
